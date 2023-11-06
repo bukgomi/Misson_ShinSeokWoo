@@ -9,11 +9,15 @@ public class App {
             String cmd = scanner.nextLine();
             if (cmd.equals("종료")) {
                 break;
-            }
+            } else if (cmd.equals("등록")) {
+                System.out.print("명언 : ");
+                String content = scanner.nextLine();
+                System.out.print("작가 : ");
+                String authorName = scanner.nextLine();
 
-            else if(cmd.equals("등록")) {
-                System.out.println("명언 : ");
-                System.out.println("작가 : ");
+                System.out.printf("명언 : %s, 작가 : %s\n", content, authorName);
+                // System.out.print("명언 : " + content + ", 작가 : " + authorName + "\n"); // 위와 같음
+                System.out.println("1번 명언이 등록되었습니다.");
             }
         }
     }
